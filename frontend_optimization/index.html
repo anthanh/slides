@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Optimization</title>
+
+		<meta name="description" content="Best practices for web optimization">
+		<meta name="author" content="Anthanh Pham Trinh">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			
+			<div class="slides">
+    <section>
+        <h1>
+            <br>
+        </h1>
+        <h1>Web Optimization</h1>
+        <div>
+            <br>
+        </div>
+        <p>Harder Better <font color="#ff0000">FASTER</font> Stronger</p>
+        <p>
+        <br>
+    </p>
+    <p>
+    <br>
+</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+<p>
+<a href="https://twitter.com/antaipt">@antaipt</a>
+</p>
+</section>
+<section>
+    <h2>Web Optimization</h2>
+<div>
+    <br>
+</div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+        </div>
+<div>Make the web faster!</div>
+        <div>
+            <span style="letter-spacing: -0.02em;">
+                <br>
+            </span>
+        </div>
+        <h2 class="fragment">Bandwitch vs Latency</h2>
+<div>
+    <br>
+</div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <a href="http://www.slideshare.net/joshfraz/sept-2012rumtalk">link</a>
+        </div>
+
+</section>
+        <section>
+            <h2>HOW MUCH IS&nbsp;<font color="#ff0000">FAST</font>?</h2>
+<div>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+<div>
+    <div>
+        <ul>
+            <li>
+                <b>
+                <span style="text-align: center;letter-spacing: -0.02em;">Delay</span>
+                <span style="text-align: center;letter-spacing: -0.02em;">
+                    <span style="font-size: 35.931026px;font-style: normal;font-variant: normal;line-height: 43.189415px;letter-spacing: -0.02em;white-space: pre;">	</span>
+                    <span style="font-size: 35.931026px;font-style: normal;font-variant: normal;line-height: 43.189415px;letter-spacing: -0.02em;white-space: pre;">	</span>
+                    <span style="font-size: 35.931026px;font-style: normal;font-variant: normal;line-height: 43.189415px;letter-spacing: -0.02em;white-space: pre;">	</span>
+                    <span style="font-size: 35.931026px;font-style: normal;font-variant: normal;line-height: 43.189415px;letter-spacing: -0.02em;white-space: pre;">	</span>User reaction</span>
+                </b>
+            </li>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">
+                    <font color="#00cc00">0 - 100 ms</font>
+                </span>
+                <span style="text-align: center;letter-spacing: -0.02em;white-space: pre;">		</span>
+            <span style="text-align: center;letter-spacing: -0.02em;">Instant</span>
+                <br>
+            </li>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">100 - 300 ms</span>
+                <span style="text-align: center;letter-spacing: -0.02em;white-space: pre;">	</span>
+                <span style="font-size: 35.931026px;font-style: normal;font-variant: normal;line-height: 43.189415px;letter-spacing: -0.02em;text-align: center;white-space: pre;">	</span>
+            <span style="text-align: center;letter-spacing: -0.02em;">Feels sluggish</span>
+                <br>
+            </li>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">300 - 1000 ms &nbsp;</span>
+                <span style="text-align: center;letter-spacing: -0.02em;white-space: pre;">	</span>
+            <span style="text-align: center;letter-spacing: -0.02em;">Machine is working...</span>
+                <br>
+            </li>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">
+                    <font color="#ff0000">1 s+</font>
+                </span>
+                <span style="text-align: center;letter-spacing: -0.02em;white-space: pre;">			</span>
+                <span style="font-size: 35.931026px;font-style: normal;font-variant: normal;line-height: 43.189415px;letter-spacing: -0.02em;text-align: center;white-space: pre;">	</span>
+            <span style="text-align: center;letter-spacing: -0.02em;">Mental context switch &nbsp;</span>
+                <br>
+            </li>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">
+                    <font color="#ff0000">10 s+</font>
+        </span>
+        <span style="text-align: center;letter-spacing: -0.02em;">
+            <span style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;white-space: pre;">	</span>
+            <span style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;white-space: pre;">	</span>
+            <span style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;white-space: pre;">	</span>
+            <span style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;white-space: pre;">	</span>I'll come back later...</span>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </div>
+<div>
+<br>
+</div>
+<div>
+    <br>
+</div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+        </div>
+<p style="text-align: left;">
+    <a href="http://www.nngroup.com/articles/response-times-3-important-limits/">link</a>
+        </p>
+
+
+</section>
+        <section>
+            <h2>Why?</h2>
+            <div>
+                <ul>
+                    <li style="text-align: left;">
+                        <span style="text-align: center;letter-spacing: -0.02em;">Better user experience</span>
+                        <br>
+                    </li>
+                    <li style="text-align: left;">
+                        <span style="text-align: center;letter-spacing: -0.02em;">Reduce bounce rate</span>
+                    </li>
+                    <li style="text-align: left;">
+                        <span style="text-align: center;letter-spacing: -0.02em;">Performance is a feature</span>
+                    </li>
+                </ul>
+                <img src="img/bounce_rate.png" style="text-align: left;letter-spacing: -0.02em; width: 700px;">
+                <br>
+            </div>
+        <div style="text-align: left;">
+            <a href="http://www.slideshare.net/joshfraz/sept-2012rumtalk">link</a>
+        </div>
+        </section>
+        <section>
+            <h2>Where to begin?</h2>
+<div>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+<div>
+    <img src="img/navigation-timing.png" style="width: 800px;">
+    <br>
+</div>
+<div>
+            <br>
+</div>
+<div>
+    <br>
+</div>
+            <div>
+                <br>
+            </div>
+
+<div style="text-align: left;">
+            <a href="http://httparchive.org/trends.php#bytesTotal&amp;reqTotal">
+            </a>
+            <a href="http://httparchive.org/trends.php#bytesTotal&amp;reqTotal" style="line-height: 1.2em;letter-spacing: -0.02em;">link</a>
+        </div>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <h1>DNS</h1>
+    </section>
+    <section>
+        <h2>DNS</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Poorly maintained</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Unreliable</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">DDOS</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">High latency (130ms)</span>
+                    <br>
+                </li>
+            </ul>
+            <div>
+                <br>
+            </div>
+        </div>
+        <div class="fragment">
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Reduce lookup</span>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Google DNS</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Namebench, <a href="http://www.dnsstuff.com/tools">DNSStuff</a>, ...</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">ISP</span>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Site provider</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <h1>SERVer</h1>
+    </section>
+    <section>
+        <h2>server</h2>
+<div>
+    <br>
+</div>
+<div style="text-align: left;">
+    <span style="text-align: center;white-space: pre;">  </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="text-align: center;white-space: pre;">  </span>
+    <span style="text-align: center;white-space: pre;">    </span>
+    <span style="text-align: center;white-space: pre;">    </span>
+    <span style="letter-spacing: -0.02em;">Cache</span>
+</div>
+        <div style="text-align: left;">
+            <span style="letter-spacing: -0.02em;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.html5rocks.com/es/tutorials/appcache/beginner/">&nbsp;appcache.manifest</a>
+        </span>
+    </div>
+    <div style="text-align: left;">
+        <span style="letter-spacing: -0.02em;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;static resources (favicon?)</span>
+    </div>
+    <div style="text-align: left;">
+        <span style="letter-spacing: -0.02em;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Proxy</span>
+    </div>
+    <div style="text-align: left;">
+        <span style="letter-spacing: -0.02em;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;e-tag headers</span>
+    </div>
+    <div class="fragment" style="text-align: left;">
+        <span style="letter-spacing: -0.02em;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gzip</span>
+    </div>
+    <div class="fragment" style="text-align: left;">
+        <span style="letter-spacing: -0.02em;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="http://www.stevesouders.com/blog/2009/05/12/sharding-dominant-domains/">Domain sharding</a>
+    </span>
+</div>
+<div class="fragment" style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Avoid redirects</div>
+<div class="fragment" style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Flush early, flush often</div>
+<div style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</div>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <h1>resources</h1>
+</section>
+<section>
+    <h2>resources</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">Optimize images (<a href="http://optipng.sourceforge.net/">PNG</a>, <a href="http://freecode.com/projects/jpegoptim">JPG</a>)</span>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">
+                    <a href="https://www.wunderlist.com/#/login">Sprites</a>
+                </span>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Upload static resources to CDN</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Reduce cookie size</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Files &lt; 25Kb (iOS)</span>
+                <br>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div style="text-align: left;">
+        <a href="http://www.yuiblog.com/blog/2008/02/06/iphone-cacheability/">link</a>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <h1>HTML</h1>
+</section>
+<section>
+    <h2>HTML</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">Reduce DOM tree</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Minimize DOM</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid iframes</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Declare CSS in headers</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Declare JS before &lt;/body&gt;</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">async directive for JS</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <h1>CSS</h1>
+</section>
+<section>
+    <h2>CSS</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid CSS inline</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid CSS expressions</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid vendor specific filters</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid image resizing</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid imports</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Avoid complex selectors</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Concat CSS files</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div class="fragment">
+        <a href="http://compass-style.org/help/tutorials/spriting/">
+            <img src="img/compass.png">
+        </a>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <h1>JavaScript</h1>
+</section>
+<section>
+    <h2>javascript</h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <span style="text-align: center;letter-spacing: -0.02em;">Minimize scripts</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Concat scripts</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Minimize DOM access</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">Cache styles properties</span>
+                <br>
+            </li>
+            <li class="fragment">
+                <span style="text-align: center;letter-spacing: -0.02em;">
+                    <a href="http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/">Zombies</a> views! huhu</span>
+                    <br>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <h1>Tooling</h1>
+    </section>
+    <section>
+        <h2>WEBAPP</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="img/yeoman1.png">
+            <br>
+        </div>
+    </section>
+    <section>
+        <h2>WEBAPP</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="img/yeoman2.jpg">
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Test runner</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">CSS, JS, images optimizer</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">WebApp builder</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Cache declaration/invalidator</span>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="profiling">
+        <h2>PROFILLING &amp; ANALySiS</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">
+                        <a href="http://tools.pingdom.com/fpt/">pingdom</a>
+                    </span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">
+                        <a href="https://developers.google.com/speed/pagespeed/insights">Google PageSpeed</a>
+                    </span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">
+                        <a href="http://yslow.org/">YSlow</a>
+                    </span>
+                    <br>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <img src="img/google-developers.png" style="line-height: 1.2em;letter-spacing: -0.02em;">
+            <a href="https://www.google.com/analytics/web/?hl=es&amp;pli=1#home/a27616034w62989231p64595003/">
+                <img src="img/analytics.png" style="line-height: 1.2em;letter-spacing: -0.02em;">
+            </a>
+        </div>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <div>
+            <br>
+        </div>
+        <h1>MOBILE</h1>
+        <div>The "little" big challenge</div>
+    </section>
+    <section>
+        <h2>THE MOBILE CHALLENGE</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Contradictory</span>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Infrastructure</span>
+                </li>
+                <li>
+                    <span style="letter-spacing: -0.02em;text-align: center;">Widely used</span>
+                </li>
+                <li>
+                    <span style="letter-spacing: -0.02em;text-align: center;">Device jungle</span>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>SOME TECHNIQUES</h2>
+        <div style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;letter-spacing: normal;text-transform: none;">
+            <br>
+        </div>
+        <div style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;letter-spacing: normal;text-transform: none;">
+            <br>
+        </div>
+        <div style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;letter-spacing: normal;text-transform: none;">
+            <br>
+        </div>
+        <div style="font-size: 36.51539px;font-style: normal;font-variant: normal;line-height: 43.19086px;letter-spacing: normal;text-transform: none;">
+            <ul>
+                <li>
+                    <span style="text-align: center;">Identify the "<a href="https://developers.google.com/speed/pagespeed/insights">Critical Path</a>"</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;">CSS, JS inline...(oh! really?)</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;">Optimize images</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Methodologies</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Responsive Web Desing (RWD)</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Mobile first</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Dedicated mobile site</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">
+                        <a href="http://www.lukew.com/ff/entry.asp?1392">RESS</a>
+                    </span>
+                    <br>
+                </li>
+            </ul>
+            <div style="text-align: left;">
+                <br>
+            </div>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <a href="http://sixrevisions.com/mobile/methods-mobile-websites/">link</a>
+        </div>
+    </section>
+    <section>
+        <h2>CONCLUSION</h2>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Speed matters</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Track metrics</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Focus on Front-End (JS)</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Follow best practices</span>
+                    <br>
+                </li>
+                <li>
+                    <span style="text-align: center;letter-spacing: -0.02em;">Use dev, automation &amp;&nbsp;</span>
+                    <span style="text-align: center;letter-spacing: -0.02em;">analysis</span>
+                    <span style="text-align: center;letter-spacing: -0.02em;">&nbsp;tools</span>
+                    <br>
+                </li>
+            </ul>
+            <div>
+                <br>
+            </div>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div>
+            <br>
+        </div>
+        <div style="text-align: left;">
+            <a href="http://es.slideshare.net/souders/sxsw-even-faster-web-sites">link</a>
+        </div>
+    </section>
+    <section>
+        <h2>
+    <br>
+</h2>
+<div>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+<h1>THANKS!</h1>
+<div>
+    <br>
+</div>
+<p>
+        <a href="https://twitter.com/antaipt">@antaipt</a>
+					    <br>
+					    </p>
+        <p>
+					    	<span>made with <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>
+					    	</span>
+					    </p>
+		    		
+</section>
+    </div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

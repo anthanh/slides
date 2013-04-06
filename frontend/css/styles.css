@@ -1,0 +1,113 @@
+#html5-friends img {
+	width: 200px;
+}
+
+#html5 h2 img {
+	width: 65px;
+	margin: 0px 10px 0px 0px;
+}
+
+#html5 #multimedia ul {
+	width: 70%;
+}
+
+#html5 #multimedia video, #html5 #multimedia audio {
+	width: 300px;
+	margin-left: 175px;
+}
+
+@font-face {
+  font-family: 'ANUDRG';
+  src: url(fonts/AnuDaw/ANUDRG.ttf);
+}
+
+#css3 #fonts {
+	font-family: 'ANUDRG';
+}
+
+#css3 #gradients {
+	background: #f6e6b4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f6e6b4 0%, #ed9017 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(100%,#ed9017)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f6e6b4 0%,#ed9017 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
+}
+
+#css3 #shadows {
+	-webkit-box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 0.3);
+	box-shadow: 5px 5px 5px 5px rgba(5, 5, 5, 0.3);
+}
+
+#css3 #shadows h2 {
+	text-shadow: 4px 4px 3px #aaa;
+	filter: dropshadow(color=#aaa, offx=4, offy=4);
+}
+
+#css3 #transforms pre {
+  -webkit-transform: rotateZ(5deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+#css3 #transforms pre:hover {
+  -webkit-transform: rotateZ(-5deg);
+}
+
+#css3 #animation pre {
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+ 
+#css3 #animation pre:hover {
+	-moz-transform: scale(2) rotate(30deg) translate(50px);
+	-webkit-transform: scale(1.2) rotate(30deg) translate(50px);
+	-o-transform: scale(2) rotate(30deg) translate(50px);
+	transform: scale(2) rotate(30deg) translate(50px);
+}
+
+#css3 .code-right {
+	float: right;
+	width: 45%;
+}
+
+#css3 .code-left {
+	float: left;
+	width: 45%;
+}
+
+#js #quora iframe {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#js #libs img {
+	width: 190px;
+}
+
+#js #frameworks img {
+	width: 155px;
+}
+
+#js #frameworks .invert {
+	background-color: #555;
+}
+
+#js .backbone img {
+	width: 550px;
+}
+
+#js #testing img {
+	height: 210px;
+}
+
+#js #integrationtesting img {
+	height: 200px;
+}
+
+#js #crossbrowsertesting img {
+	width: 600px;
+}
+
